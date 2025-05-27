@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&family=SUSE:wght@100..800&family=Sigmar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&family=SUSE:wght@100..800&family=Sigmar&display=swap');
+
+.add-item-button {
+    width: 221px;
+    background-color: #393E46;
+    color: white;
+    border: none;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 3px;
+    margin-left: 105px;
+}
+
+.add-item-button:hover {
+    background-color: #6a6f79;
+    font-weight: 200;
+}
+.search-bar {
+    font-size: medium;
+    padding: 10px;
+    width: 200px;
+    border: 1px solid rgb(189,195,199);
+    border-radius: 5px;
+    margin-right: 10px;
+}
+input:focus, .search-bar:focus, .category-filter:focus, .info-row input:focus {
+    color: rgb(0, 0, 0);
+    outline: solid;
+    outline-width: thin;
+    outline-color: rgb(189,195,199);
+}
+.inventory-table {
+    width: 100%;
+    max-width: 1800px; /* Set the maximum width */
+    min-width:800px;  /* Set the minimum width */
+    margin: 10px auto; /* Center the table */
+    border-collapse: collapse;
+}
+
+/* Table Headers and Cells */
+.inventory-table th, .inventory-table td {
+    padding: 5px;
+    text-align: left;
+    border-bottom: 1px solid rgb(189,195,199);
+}
+
+/* Header Row */
+.inventory-table th {
+    background-color: rgb(9, 117, 122);
+    color: rgb(255, 255, 255);
+}
+
+/* Table Body Rows */
+.inventory-table td {
+    background-color: white;
+    padding: 5px;
+}
+
+/* General Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+/* Border and Font */
+table, th, td {
+    border: 1px solid black;
+    font-family: Inter, sans-serif;
+}
+
+/* Padding and Alignment */
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Alternate Header Style */
+th {
+    background-color: #f4f4f4;
+}
+
+h2, h1, label{
+    font-family: Inter, sans-serif;
+}
+
+h1{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+h2{
+    margin-top: 5px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.container2 {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} 
+
+.container1 {
+    padding: 20px;
+}
+
+.logs {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 80px;
+} 
+
+.add-item-button {
+    width: 225px;
+    background-color: #393E46;
+    color: white;
+    border: none;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 80px;
+}
+
+.add-item-button:hover {
+    background-color: #6a6f79;
+    font-weight: 200;
+}
+
+.search-bar1 {
+    font-size: medium;
+    padding: 10px;
+    width: 200px;
+    border: 1px solid rgb(189,195,199);
+    border-radius: 5px;
+    margin-right: 10px;
+}
+input:focus, .search-bar1:focus, .category-filter:focus, .info-row input:focus {
+    color: rgb(0, 0, 0);
+    outline: solid;
+    outline-width: thin;
+    outline-color: rgb(189,195,199);
+}
+
+.flavor-input {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.update-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.update-btn:hover, .delete-btn:hover {
+    opacity: 0.8;
+}
+
+#customPopup {
+    min-width: 300px;
+    text-align: center;
+}
+#popupButtons {
+    margin-top: 15px;
+}
+.popup-btn {
+    padding: 8px 20px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.confirm-btn {
+    background-color: #007bff;
+    color: white;
+}
+.cancel-btn {
+    background-color: #6c757d;
+    color: white;
+}
+
+/* Search Bar Container */
+.search-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Search Bar */
+.search-bars {
+    width: 100%;
+    padding-left: 30px;  /* Add space for the search icon */
+    padding-right: 30px; /* Add space for the sorting icon */
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Search Icon */
+.search-container i.fa-search {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+/* Sorting Icon */
+#sortIcon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #888;
+}
+
+
+/* Search Input */
+.search-bars {
+    width: 30%;
+    padding: 8px 8px 8px 35px;  /* Padding on left for the icon */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination-link {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0 5px;
+    font-size: 16px;
+    color: #007bff;
+    background-color: white;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.pagination-link:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.pagination-link.active {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}

@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #66A9AC;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Poetsen One', sans-serif;
+    margin: 0px;
+    color: #0D757C;
+}
+
+p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 80px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-left: 20px;
+}
+
+ul li:first-child {
+    margin-left: 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+ul li form {
+    margin: 0;
+}
+
+ul li form button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+ul li form button:hover {
+    background-color: #c82333;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+}
+
+/* Form styles */
+.login-form,
+.register-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"],
+.login-form button,
+.register-form input[type="text"],
+.register-form input[type="password"],
+.register-form button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.login-form button,
+.register-form button {
+    background-color: #0D757C;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.login-form button:hover,
+.register-form button:hover {
+    background-color: #43949C;
+}
+
+.form-logo {
+    width: 220px; 
+    margin: 0 auto;
+    display: block;
+}
+
+/* Form inside container */
+form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+form input[type="text"],
+form button,
+form select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button,
+a.button {
+    background-color: #850602;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form button:hover,
+a.button:hover {
+    background-color: #b30600;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th,
+table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+table td {
+    background-color: #fff;
+}
+
+.error-container {
+    display: none;
+    background-color: rgba(255, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px; 
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    width: 100%; 
+    position: relative; 
+    margin-top: 5px; 
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; transform: scale(1); }
+    to { opacity: 0; transform: scale(0.5); }
+}
+

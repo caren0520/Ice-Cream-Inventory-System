@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+    padding-top: 60px; 
+}
+
+.sidebar {
+    margin-top: 65px;
+    width: 60px;
+    background: #222831;
+    color: white;
+    height: 100vh;
+    transition: width 0.3s ease;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+}
+
+.sidebar.expanded {
+    width: 250px;
+}
+.sidebar-header, .nav-item, .dropdown-toggle {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.sidebar-header:hover, .nav-item:hover, .dropdown-toggle:hover {
+    background: #555;
+}
+.icon {
+    min-width: 40px;
+    text-align: center;
+    margin-right: 10px;
+}
+.sidebar:not(.expanded) .nav-text {
+    display: none;
+}
+.dropdown-content {
+    display: none;
+    background: #444;
+}
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+.dropdown-content a:hover {
+    background: #555;
+}
+.toggle-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+}
+.content {
+    margin-left: 60px; 
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+}
+
+.sidebar.expanded + .content {
+    margin-left: 250px; 
+}

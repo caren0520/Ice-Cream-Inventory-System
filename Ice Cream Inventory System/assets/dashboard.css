@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .top-row {
+    display: flex;
+    gap: 16px;
+    width: 1200px;
+  }
+  
+  .box {
+    height: 200px;
+    flex: 1;
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .bottom-box {
+    height: 250px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  canvas {
+    width: 90% !important;
+    height: 90% !important;
+  }
+  
